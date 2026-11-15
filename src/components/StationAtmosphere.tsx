@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { CrisisEffectType } from '../data/scenarios';
+import interiorImg from '../../interior.jpg';
 
 interface StationAtmosphereProps {
   crisisEffect: CrisisEffectType | null;
@@ -149,11 +150,11 @@ export const StationAtmosphere: React.FC<StationAtmosphereProps> = ({
       >
         {!imgError ? (
           <img
-            src="/assets/aistudio/image_8d115ddf.png"
-            alt="Futuristic space station interior corridor with starfield viewport, glowing overhead panels, pipes, and control consoles"
+            src={interiorImg}
+            alt="Curved futuristic space station interior corridor with cyan ceiling conduits and panoramic viewports"
             referrerPolicy="no-referrer"
             onError={() => setImgError(true)}
-            className="w-full h-full object-cover object-center brightness-[0.82] contrast-[1.08]"
+            className="w-full h-full object-cover object-center brightness-[0.86] contrast-[1.08]"
           />
         ) : (
           <div className="w-full h-full bg-[radial-gradient(ellipse_at_center,_#1b2634_0%,_#0b111c_65%,_#05070d_100%)]" />
