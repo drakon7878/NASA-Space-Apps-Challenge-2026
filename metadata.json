@@ -1,0 +1,6 @@
+{
+  "name": "Orbital Fourth",
+  "description": "An ethereal space-station quick-thinking game where an unseen 4D observer spots and reshapes flawed astronaut reasoning before disaster strikes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
